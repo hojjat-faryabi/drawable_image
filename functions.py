@@ -29,14 +29,18 @@ def calcNewSizes(dp):
 
 def getImageFilesList():
     files = []
-
     for file in os.listdir("."):
-        if os.path.isfile(file):
-            file_parts = pathlib.Path(file)
-            if file_parts.suffix.removeprefix(".") in SUPPORTED_FORMATS:
-                files.append(file_parts.name)
-
+        if isImage(file):
+            files.append(file)
     return files
+
+
+def isImage(name):
+    if os.path.isfile(name):
+        file_parts = pathlib.Path(name)
+        if file_parts.suffix.removeprefix(".") in SUPPORTED_FORMATS:
+            return True
+    return False
 
 
 def checkImageNameForSave(name: str):
