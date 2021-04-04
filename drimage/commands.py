@@ -29,4 +29,4 @@ def commandHandler(file_name, all):
             createNewImage(images[i])
             print("Done")
     else:
-        click.echo('please use drimage --help')
+        click.echo('please use drimg --help')

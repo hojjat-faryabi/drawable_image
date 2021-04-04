@@ -7,20 +7,20 @@ A package to convert images to different sizes for the development of Android ap
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install drimage.
 
 ```bash
-pip install drimage
+pip install drimg
 ```
 
 ## Usage
 
 convert one image
 ```bash
-$ drimage file_name
+$ drimg file_name
 ```
 
 
 Convert all images of the current directory
 ```bash
-$ drimage -a
+$ drimg -a
 ```
 
 :exclamation: It is not possible to process relative paths at this time, and you must use these commands in the directory where the images are located.
