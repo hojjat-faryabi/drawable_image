@@ -1,7 +1,7 @@
 from PIL import Image
 import os
 import pathlib
-from constants import *
+from .constants import *
 
 
 def calcDP(px):

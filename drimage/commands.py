@@ -1,5 +1,5 @@
 import click
-from functions import *
+from .functions import *
 
 
 @click.command()
